@@ -21,7 +21,6 @@ def _init(x0, t0, tf, tol):
 def rk23(f, x0, t0, tf, tol):
     h, t, x = _init(x0, t0, tf, tol)
     i = 0
-    rejected = []
 
     while t[i] < tf:
         t[i+1] = t[i] + h[i]
